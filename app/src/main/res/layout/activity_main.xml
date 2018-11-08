@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_RL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#DE5347"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_accum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_accum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_step"
+        android:layout_centerHorizontal="true"
+        android:text="0000"
+        android:textAlignment="center"
+        android:textColor="#DE5347"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_accum"
+        android:layout_centerHorizontal="true"
+        android:text="Initializing..."
+        android:textAlignment="center"
+        android:textColor="#DE5347"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+    <!-- inputype: phone number; ems = 10 digits-->
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rec"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:textAlignment="center"
+        android:text="START"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:text="CREATE DATABASE"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:onClick="OnClick"
+        android:text="SAVE"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+    <!--Button for dial-->
+    <Button
+        android:id='@+id/btn_dial'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberBlock"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Crimson"
+        android:onClick="dialEmergency"
+        android:text="@string/dial_button"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+    <!--DeveloperName-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="6dp"
+        android:text="Developed by HanZhang"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#DE5347"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/numberBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_insert"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/number_hint"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btn_fall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_insert"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/btn_start"
+        android:onClick="fellDown"
+        android:text="Fall" />
+
+    <Button
+        android:id="@+id/SQL"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_insert"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/btn_insert"
+        android:background="@color/Chocolate"
+        android:text="Data" />
+
+
+</RelativeLayout>
+

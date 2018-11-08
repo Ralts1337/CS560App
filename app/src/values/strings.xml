@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Activity Recognizor</string>
+    <string name="phoneNumber">Enter your local emergency &#10;phone number</string>
+    <string name="dial_button">Call Emergency</string>
+    <string name='instruction2'>To change the number\nClick on the line above</string>
+    <string name='number_hint'><font size="16">
+        Please enter your local emergency number\n
+        Default is 997 for Ambulance
+    </font></string>
+    <string name="title_activity_in_case_of_fall">InCaseOfFall</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
+
+

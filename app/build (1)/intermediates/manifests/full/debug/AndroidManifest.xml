@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhanghan.activityrecognizor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="27" />
+
+    <!-- Asks for internet permission and the internet state -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Asks for call permission -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Asks for location permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Asks for read and write file -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher2"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- screen orientation locks the screen to portrait -->
+        <activity
+            android:name="com.zhanghan.activityrecognizor.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Next Activity -->
+
+        <activity
+            android:name="com.zhanghan.activityrecognizor.InCaseOfFall"
+            android:label="@string/title_activity_in_case_of_fall"
+            android:parentActivityName="com.zhanghan.activityrecognizor.MainActivity" >
+        </activity>
+    </application>
+
+</manifest>

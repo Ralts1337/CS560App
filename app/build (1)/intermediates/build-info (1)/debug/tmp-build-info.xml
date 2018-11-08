@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="28"
+    build-mode="HOT_WARM"
+    density="420dpi"
+    format="10"
+    plugin-version="3.2.0"
+    timestamp="1537975393535"
+    token="2022919058898223994"
+    verifier="NO_CHANGES" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+</instant-run>
