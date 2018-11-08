@@ -72,6 +72,10 @@ public class InCaseOfFall extends AppCompatActivity {
                 }
                 else{//else permission is granted, dial the number
                     startActivity(dialEmergencyNumber);}
+                    //cancel the timer
+                    timeBeforeDial.cancel();
+                    //quit activity
+                     finish();
             }
         });
         //if user clicked no, return to the previous activity (main activity, front page)
