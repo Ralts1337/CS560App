@@ -39,11 +39,11 @@
         <activity
             android:name=".InCaseOfFall"
             android:label="@string/title_activity_in_case_of_fall"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".LogFile"
             android:label="@string/title_activity_log_file"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

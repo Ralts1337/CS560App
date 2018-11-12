@@ -120,6 +120,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
         //press getData to get data
+        // 点击"Data"按键（ID是getdata), 显示database的数据到Logfile.java
+        // 请看logfile.java （Bug in logfile.java)
         btn_getData.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 List<RowOfData> datas = db.getAllData();
@@ -146,7 +148,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }//onCreate finishes
 
 
-    //Starts the next activity in case a fall is detected
+    //Starts the "InCaseOfFall" activity if fall is detected
+    //timer and auto dial emergency in InCaseOfFall.java
     public void fellDown() {
         Intent felldown = new Intent(this, InCaseOfFall.class);
         EditText phoneNumber = (EditText) findViewById(R.id.numberBlock);//phone number = entered emergency number in the block
@@ -205,7 +208,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //for data base, start, count and everything else. Default on click with no method name
+    //for database, start, count and everything else. Default on click with no method name
     @Override
     public void onClick(View view) {
         tv_step.setText("0");
